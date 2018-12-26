@@ -58,7 +58,7 @@ This way is quite a bit slower but it may be your best option on eary versions o
 
 # Saving to a file
 
-I find the best way to save a hashtable to a file is to save it as JSON. You can import it back into a `[PSCusomObject]`
+I find the best way to save a hashtable to a file is to save it as JSON. You can import it back into a `[PSCustomObject]`
 
     $myObject | ConvertTo-Json -depth 1- | Set-Content -Path $Path
     $myObject = Get-Content -Path $Path | ConvertFrom-Json
